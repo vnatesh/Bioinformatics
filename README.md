@@ -8,6 +8,9 @@ This Repository contains bioinformatic analysis and data extraction scripts.
 -The goal with these two scripts was to narrow down the huge gene variant list to just those variants that were found in our the DNA of patients in the severe-blindness cohort (n=20). 
 
 
+- SAM_processing.py is an algorithm for quantifying strengths between globular proteins and self-assembled phospholipid monolayers (SAM). The model takes in as input, data representing bond strengths between an amino acid (AA) of the subject protein (in our case, amylin) and the SAM, for all amino acids of the protein (40 AA total). 
+- t=0.75 is the threshold sensitivity we use to determine whether or not a specific AA-->SAM interaction is strong (>0.75) or weak (<0.75). 
+
 
 
 
