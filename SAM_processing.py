@@ -19,7 +19,7 @@ with open('/Users/vikasnatesh/Downloads/SAM-CH3_Contact.txt','r') as file1, \
     allData = np.empty((0,numframes-2), int) # create an empty array (row) of
                                              # length numframes-2 so we can append
                                              # to it later to create the allData matrix
-    t=0.75
+    t=0.25
  #   i=0
     i=9  # we set i=9 instead of 0 because the first 9 rows, by default
          # are useless text and file information
@@ -41,7 +41,7 @@ with open('/Users/vikasnatesh/Downloads/SAM-CH3_Contact.txt','r') as file1, \
             break
 
     for i in allData:
-        compare= i >= 0.25*max(i)
+        compare= i >= t * max(i)
         file2.write(str(sum(compare.astype(int))/float(len(i)))+'\n')
 
 
