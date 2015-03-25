@@ -12,7 +12,7 @@ This Repository contains bioinformatic analysis and data extraction scripts.
 
 - SAM_processing.py is an algorithm for quantifying strengths between globular proteins and self-assembled phospholipid monolayers (SAM). The model takes in as input, data representing bond strengths between all 40 amino acids (AA) of the subject protein (Amylin) and the SAM. One run of the computer simulation produces bond strengths for the AA's of 5 separate amylin molecules. The whole simulation is run approximately 30,000 times and bond strengths are averaged for all 40 AA's.
 
-- t=0.75 is the threshold sensitivity we use to determine whether or not a specific AA-->SAM interaction is strong (>0.75) or weak (<0.75). This allows us to count and map the strong interactions so we know exactly which AA's interact strongly with the monolayer. This gives us insight into the protein dynamics and potential "sticky areas" of amylin, which is implicated in Alzheimer's Disease.
+- t=0.25 is the threshold sensitivity we use to determine whether or not a specific AA-->SAM interaction is strong (>0.25) or weak (<0.25). This allows us to count and map the strong interactions so we know exactly which AA's interact strongly with the monolayer. This gives us insight into the protein dynamics and potential "sticky areas" of amylin, which is implicated in Alzheimer's Disease.
 
 
 
